@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{ partial "metahome.html" . }}
+        {{ partial "common/styles.html" }}
+        {{ partial "common/favicon.html" }}
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72677205-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Gurujada IT Solutions Private Limited",
+    "url": "https://www.gurujada.com/",
+     "description": "Gurujada saves entrepreneurs from the Website builder menace. We suffered with website builders ourselves and have first hand experience of it.",
+    "sameAs": [ "https://www.facebook.com/Gurujada/",
+    "https://twitter.com/gurujada",
+    "https://plus.google.com/+Gurujada",
+    "https://in.linkedin.com/company/gurujada"],
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.gurujada.com/images/gurujada_logo.png",
+        "height": "50",
+        "width": "250" 
+    },
+    "email": "hello@gurujada.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5th Lane, Padmavathi Nagar",
+        "addressLocality": "Vizianagaram",
+        "addressRegion": "Andhra Pradesh",
+        "postalCode": "535002",
+        "addressCountry": "INDIA" 
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.gurujada.com/images/gurujada_logo.png",
+        "height": "50",
+        "width": "250" 
+    },
+    "location": {
+        "@type": "Place",
+        "name": "Gurujada IT Solutions Private Limited",
+        "hasMap": "https://www.google.com/maps/place/GURUJADA+IT+Solutions+Private+Limited/@18.0977183,83.4073448,17z/data=!4m12!1m6!3m5!1s0x3a3be539c69500b5:0x3dc5376fa84b7be4!2sGURUJADA+IT+Solutions+Private+Limited!8m2!3d18.0977132!4d83.4095335!3m4!1s0x3a3be539c69500b5:0x3dc5376fa84b7be4!8m2!3d18.0977132!4d83.4095335",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.gurujada.com/images/gurujada_logo.png",
+            "height": "50",
+            "width": "250" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gurujada.com/images/gurujada_logo.png",
+            "height": "50",
+            "width": "250" 
+        },
+        "url": "https://www.gurujada.com/",
+        "sameAs": [ "https://www.facebook.com/Gurujada/",
+    "https://twitter.com/gurujada",
+    "https://plus.google.com/+Gurujada",
+    "https://in.linkedin.com/company/gurujada"],
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "18.0977183",
+            "longitude": "83.4073448" 
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "5th Lane, Padmavathi Nagar",
+            "addressLocality": "Vizianagaram",
+            "addressRegion": "Andhra Pradesh",
+            "postalCode": "535002",
+            "addressCountry": "INDIA" 
+        } 
+    },
+    "founder": "Chivukula Krishna Mohan and Usha Ramani Vemuru",
+    "foundingDate": "2012",
+    "foundingLocation": "Vizianagaram, Andhra Pradesh" 
+}
+</script>
+      </head>
+      <body>
+      
+      {{ partial "page_loader.html" }}
+      {{ partial "navbar.html" }}
+      {{ partial "firstfold.html" }}
+      {{ partial "about.html" }}
+      {{ partial "benefits.html" }}
+      {{ partial "testimonials.html" }}
+      {{ partial "team.html" . }}
+      {{ partial "form.html"}}
+      {{ partial "blogpreview.html" . }}
+      {{ partial "footer.html" }}
+      {{ partial "common/scripts.html" }}
+      <script>
+$(function () {
+  var message = "Hey, come back!";
+  var original;
+
+  $(window).focus(function() {
+    if(original) {
+      document.title = original;
+    }
+  }).blur(function() {
+    var title = $('title').text();
+    if(title != message) {
+      original = title;
+    }
+    document.title = message;
+  });
+});</script>
+</body>
+</html>

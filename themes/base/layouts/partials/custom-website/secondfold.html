@@ -1,0 +1,20 @@
+<section class="synergysolutions">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="comon5Title ">Hi! Building and maintaining a website for your business is deceptively complex. If it wasn’t you wouldn’t have a new competitor to Wordpress emerge everyday. You have Weebly, Squarespace, Wix, and what not. None of them really solving
+                    the problem. Precisely why custom development of websites flourishes even today.</p> <p>Entrepreneurs don’t have the time to learn and master tools like Wordpress and Squarespace. They know what they need, and they want it now. Unfortunately,
+                    custom Website development costs thousands of Dollars and takes months to complete.</p>
+                <p class="comon6Title ">So we have come up with a solution that combines the value of a custom developed website with the cost advantages of Wordpress like tools - so that you as an Entrepreneur can get the website that you always wanted, without having to spend
+                    months of time and thousands of dollars. </p>
+                <h3 class="comon3Title ">Here is all that you get for $ <span><k style="color:#000000">100</k></span> 29 a month:</h3>
+                <h4 class="comon4Title "> </h4>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.features }}
+             {{ partial "singlefeature.html" . }}
+             {{ end }}
+        </div>
+
+</section>

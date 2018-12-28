@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Write better blog posts, and write more often.</title>
+        {{ partial "meta.html" . }}
+        {{ partial "common/styles.html" }}
+        {{ partial "common/favicon.html" }}
+        
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72677205-1', 'auto');
+      ga('send', 'pageview');
+
+      </script>
+    </head>
+    <body class="blogbetterhome">
+       {{ partial "navigation.html" }}
+       {{ partial "blogbetter.html" . }}
+       
+         {{ partial "subscribeform.html" }}
+          <section class="bettertestimonial">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-12 text-center">
+                         <div class="blogbetter">
+                            <h5>“Sometimes writing badly can eventually lead to something better. Not writing at all leads to nothing”
+</h5><h6>- Anna Quindlen
+</h6>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         {{ partial "common/scripts.html" }}
+    </body>
+</html>

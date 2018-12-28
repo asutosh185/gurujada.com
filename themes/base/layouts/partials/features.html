@@ -1,0 +1,25 @@
+<section class="what_we_do serv3title" id="scrolltoDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 class="comonTitle">What we offer</h4>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.features }}
+             {{ partial "singlefeature.html" . }}
+             {{ end }}
+        </div>
+         <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 class="comonTitle">Need help with your website 
+redesign or strategy?
+</h4>
+<p class="text-center">Talk to us about your goals and we’ll help you determine the best
+steps to achieve them with your website!
+</p>
+
+            </div>
+        </div>
+    </div>
+</section>

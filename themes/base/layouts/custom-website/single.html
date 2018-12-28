@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>custom website</title>
+        {{ partial "meta.html" . }}
+        {{ partial "common/styles.html" }}
+        {{ partial "common/favicon.html" }}
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-72677205-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      </head>
+      <body>
+
+      {{ partial "nav.html" }}
+      {{ partial "custom-website/firstfold.html" }}
+      {{ partial "custom-website/secondfold.html" . }}
+      {{ partial "custom-website/thirdfold.html" . }}
+      {{ partial "custom-website/contactformcustom.html" . }}
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/gurujada/free-consultation" style="min-width:320px;height:580px;"></div>
+<script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+<header id="header">
+<figure>
+ <a href="/" border=0 id="logolink"><div class="icon-spf13-3" id="logo"> </div></a>
+</figure>
+<div id="byline"></div>
+<div class="row">
+       <ul id="social">  <div class="col-sm-4"></div>
+         <div class="col-sm-4">
+               <span class="icon icon-bubbles"> </span>
+               <div class="social-section socialShare">
+                   <h3 class="title"> Share </h3>
+                   <ul>
+                       <li ><a class="fb" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+                       <li ><a class="tw" href="https://twitter.com/intent/tweet?status={{ .Title }}-{{ .Permalink }}" target="_blank" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
+                       <li><a class="in" href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&source=Gurujada" target="_blank"  class="btn-floating btn-small btn-tw"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+               </div>
+             </div> <div class="col-sm-4"></div>
+           </ul>
+</div>
+</header>
+     {{ partial "common/scripts.html" }}
+</body>
+</html>

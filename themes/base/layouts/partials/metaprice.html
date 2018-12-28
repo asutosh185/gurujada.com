@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Gurujada">
+<meta name="description" content="{{ .Description }}">
+<meta name="robots" content="noindex">
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="{{ .Params.og_type }}" />
+<meta property="og:title" content="{{ if .Title }} {{ .Title }}
+{{ else }} {{ .Site.Params.Title }} {{ end }}" />
+<meta property="og:description" content="{{ if .Description }} {{ .Description }}
+{{ else }} {{ .Site.Params.Description }} {{ end }}" />
+<meta property="og:image" content="{{ .Params.image }}" alt="{{ .Title }}"/>
+ <meta property="og:site_name" content="Gurujada" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:url" content="{{ .Permalink }}"/>
+<meta name="twitter:description" content="{{ .Description }}"/>
+<meta name="twitter:image:src" content="{{ .Params.image }}" alt="{{ .Title }}"/>

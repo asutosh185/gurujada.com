@@ -1,0 +1,102 @@
+title = "Gurujada"
+languageCode = "en-us"
+baseurl = "https://www.gurujada.com"
+theme = "base"
+MetaDataFormat = "toml"
+[sitemap]
+  changefreq = "manual"
+  priority = 0.5
+  filename = "sitemap.xml"
+[params]
+	author = "Gurujada"
+
+	    [params.features.1]
+      image = "/images/icons/laptop.svg"
+      featuredescription = "Custom website"
+
+    [params.features.2]
+      image = "/images/icons/responsive.svg"
+      featuredescription = "Mobile responsive"
+
+    [params.features.3]
+      image = "/images/icons/Analytics.svg"
+      featuredescription = "SEO friendly"
+
+    [params.features.4]
+      image = "/images/icons/signup.svg"
+      featuredescription = "Lead capture forms"
+
+    [params.features.5]
+      image = "/images/icons/freelaunch.svg"
+      featuredescription = "Hosting"
+
+    [params.features.6]
+      image = "/images/icons/highup.svg"
+      featuredescription = "99.9% uptime"
+
+		[params.features.7]
+			image = "/images/icons/SSL certification.svg"
+			featuredescription = "SSL certification"
+
+  	[params.features.8]
+			image = "/images/icons/awesome.svg"
+			featuredescription = "Awesome support"
+
+		[params.features.9]
+			image = "/images/icons/blog.svg"
+			featuredescription = "Blog"
+
+		[params.features.10]
+			image = "/images/icons/payment.svg"
+			featuredescription = "Payment processing"
+		[params.features.11]
+			image = "/images/icons/landing.svg"
+			featuredescription = "Landing pages"
+		[params.features.12]
+			image = "/images/icons/seo.svg"
+			featuredescription = "Traffic Analytics"
+
+			[params.whatweoffer.1]
+		image = "/images/icons/responsive.svg"
+		featuredescription = "Fully mobile responsive design"
+
+		[params.whatweoffer.2]
+		image = "/images/icons/blog.svg"
+		featuredescription = "Blog"
+
+		[params.whatweoffer.3]
+		image = "/images/icons/SSL certification.svg"
+		featuredescription = "SSL certificate"
+
+		[params.whatweoffer.4]
+		image = "/images/icons/Analytics.svg"
+		featuredescription = "SEO friendly architecture"
+
+		[params.whatweoffer.5]
+		image = "/images/icons/awesome.svg"
+		featuredescription = "Social sharing"
+
+		[params.whatweoffer.6]
+		image = "/images/icons/signup.svg"
+		featuredescription = "Contact forms"
+
+		[params.whatweoffer.7]
+		image = "/images/icons/freelaunch.svg"
+		featuredescription = "Hosting"
+
+		[params.whatweoffer.8]
+		image = "/images/icons/seo.svg"
+		featuredescription = "Google Analytics"
+
+		[params.whatweoffer.9]
+		image = "/images/icons/laptop.svg"
+		featuredescription = " Business mail"
+
+
+			[params.medias.1]
+			image = "/images/inst/respn.jpg"
+			mediatitle = "Responsive Design is Killing Two-Thirds of Your Conversions...We Can Fix it"
+			mediadescription = "There's a 270% gap in conversions between desktop and mobile. Talia Wolf identifies the main contributing factors and explains what you can do to begin closing that gap."
+      mediacomment = "You can rest assured that you will not have to upgrade your website design again in the near future!"
+			mediatime = "2017-02-08T07:35:05.230Z"
+			mediaurl = "https://moz.com/blog/responsive-design-fix-conversions"

@@ -1,0 +1,1 @@
+var clipboard=new Clipboard(".metaTags");clipboard.on("success",function(a){console.log(a)});clipboard.on("error",function(a){console.log(a)});

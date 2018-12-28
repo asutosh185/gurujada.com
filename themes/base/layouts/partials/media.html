@@ -1,0 +1,12 @@
+<section class="instSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h4 class="comonTitle ">Media</h4>
+            </div>
+        </div>
+        {{ range .Site.Params.medias }}
+         {{ partial "mediasingle.html" . }}
+         {{ end }}
+    </div>
+</section>

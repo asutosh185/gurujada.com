@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "meta.html" . }}
+    {{ partial "common/styles.html" }}
+    {{ partial "common/favicon.html" }}
+
+    <style>
+       .journalDetails{
+   background:url({{ .Params.bgimage }}) no-repeat scroll center center/cover!important;
+
+ }
+       </style>
+       <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-72677205-1', 'auto');
+   ga('send', 'pageview');
+
+   </script>
+  </head>
+  <body>
+
+    {{ partial "navbar.html" }}
+    <div class="blogsingle">
+    <section class="pageTitleSection journalDetails" style="">
+      <div class="pTSContent text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- <h1>{{ .Title }}</h1>
+              <h5> By
+                {{ if .Params.author }} {{ .Params.author }} {{ else }}
+                {{ .Site.Params.author }} {{ end }}
+              </h5> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="commonSection singleJournalPage postArticle--full">
+      <div class="container-fluid">
+        <div class="row">
+
+          <h1>{{ .Title }}</h1>
+          <div class="row">
+          <div class="col-sm-3 singleJournal_meta">
+          </div>
+          <div class="col-sm-5 singleJournal_meta a.jon_date author_name text-center">
+            By
+           <a href="{{ if .Params.author_url }} {{ .Params.author_url }} {{ else }}
+             {{ .Site.Params.author_url }} {{ end }}" target="_blank">
+             {{ if .Params.author }} {{ .Params.author }} {{ else }}
+             {{ .Site.Params.author }} {{ end }}
+           </a>
+
+          </div>
+          <div class="col-sm-3 singleJournal_meta">
+          </div>
+
+        </div>
+          </br>
+            <div class="row">
+               <div class="col-sm-3 singleJournal_meta tgs">
+                  {{ partial "meta_aside.html" . }}
+                </div>
+                <div class="col-sm-5 singleJournal_meta latest_update">
+               Published on:
+              <a >{{ .Date.Format "2 Jan 2006" }}</a>
+              </div>
+                <div class="col-sm-4 singleJournal_meta a.jon_date ">
+                  {{ .ReadingTime }} min read
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="journal_content">
+              {{ .Content }}
+
+            </div>
+            </div>
+            </div>
+            </section>
+            <div class="row">
+              <ul id="social">
+                <div class="col-sm-4 col-sm-offset-4">
+                  <span class="icon icon-bubbles"> </span>
+                  <div class="social-section socialShare">
+                    <h3 class="title"> Share </h3>
+                    <ul>
+                      <li ><a class="fb" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+                      <li ><a class="tw" href="https://twitter.com/intent/tweet?status={{ .Title }}-{{ .Permalink }}" target="_blank" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
+                      <li><a class="in" href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}&source=Gurujada" target="_blank"  class="btn-floating btn-small btn-tw"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                       </ul>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+
+              <div id="disqus_thread"></div>
+     <header id="header">
+        <figure>
+          <a href="/" border=0 id="logolink"><div class="icon-spf13-3" id="logo"> </div></a>
+        </figure>
+        <div id="byline"></div>
+
+        </header>
+            {{ partial "common/blogjs.html" }}
+
+
+        </div>
+
+              
+      </body>
+    </html>

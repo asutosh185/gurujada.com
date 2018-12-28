@@ -1,0 +1,35 @@
+
+    <div class="col-md-4 blli">
+      <div class="mix web new dig">
+        <div class="">
+          <div class="journalThumb">
+            <a href="{{ .URL }}"><img src="{{ .Site.BaseURL}}{{ .Params.banner }}" alt="blog image"></a>
+          </div>
+          <div class="j_contentW">
+            <div class="journalmeta">
+              <a href="#" class="jnalDate">{{ .Date.Format "2 Jan 2006" }}</a>
+              <p class="text-right">
+                {{ .ReadingTime }} min read
+              </p>
+            </div>
+            <!-- <div class="journalmeta">
+              {{ partial "meta_aside.html" . }}
+            </div> -->
+            <div class="j_content">
+            <h1 class="j_content_tit"><a href="{{ .URL }}">{{ .Title }}</a></h1>
+              <p>{{ .Description }}</p>
+              <h3>  By
+              <a href="{{ if .Params.author_url }} {{ .Params.author_url }} {{ else }}
+             {{ .Site.Params.author_url }} {{ end }}" target="_blank">
+             {{ if .Params.author }} {{ .Params.author }} {{ else }}
+             {{ .Site.Params.author }} {{ end }}
+           </a>
+              </h3>
+            </div>
+            <div class="journalBtn">
+              <a href="{{ .URL }}" class="sy_btn">Read More <i class="flaticon-arrows-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
